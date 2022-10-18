@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import starIcon from "../../assets/images/icon-star.svg"
 import thankYouImg from "../../assets/images/illustration-thank-you.svg"
+
 const Rating = () => {
   const [chosenRating, setChosenRating] = useState(null)
   const [isSubmitted, setIsSubmitted] = useState(false)

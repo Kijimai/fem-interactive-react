@@ -5,6 +5,7 @@ import thankYouImg from "../../assets/images/illustration-thank-you.svg"
 const Rating = () => {
   const [chosenRating, setChosenRating] = useState(null)
   const [isSubmitted, setIsSubmitted] = useState(false)
+  
   const ratings = [1, 2, 3, 4, 5]
 
   const handleClick = (e) => {
@@ -43,6 +44,7 @@ const Rating = () => {
           })}
         </div>
         <button
+          disabled={chosenRating === null ? true : false}
           onClick={handleSubmit}
           className="rating__submit-button uppercase"
         >
